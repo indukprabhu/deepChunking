@@ -1,0 +1,1000 @@
+   24  who
+   25  cd Softwares/
+   26  cd eclipse-kepler/
+   27  ./eclipse/eclipse 
+   28  showq 
+   29  qstat 
+   30  qstat -a
+   31  showstart 
+   32  man showq
+   33  exit
+   34  ls
+   35  cd Research/
+   36  ls
+   37  cd benchmarks/
+   38  ls
+   39  cd ..
+   40  ls
+   41  cd benchmarks/
+   42  ls
+   43  cd ..
+   44  ls
+   45  cd IMSuite/
+   46  ls
+   47  cd ..
+   48  ls
+   49  cd newsvncheckout/
+   50  ls
+   51  cd k2_workspace/
+   52  ls
+   53  cd Work_6_costfunction/
+   54  ls
+   55  cd IM_Suite_new/
+   56  ls
+   57  cd ..
+   58  ls
+   59  cd workspace/
+   60  ls
+   61  cd testprgms/
+   62  ls
+   63  cd src/
+   64  ls
+   65  cd testCases/
+   66  ls
+   67  cd input/
+   68  ls
+   69  cd ..
+   70  cd unchunked/
+   71  ls
+   72  cd ..
+   73  ls
+   74  vi DynSched.h 
+   75  vi chunkOut.x10 
+   76  vi dynamic/
+   77  cd dynamic/
+   78  ls
+   79  cd ..
+   80  ls
+   81  cd ..
+   82  ls
+   83  cd ..
+   84  ls
+   85  cd x10-2.4.3-src/
+   86  ls
+   87  cd ..
+   88  ls
+   89  cd cd Research/
+   90  ls
+   91  cd Research/
+   92  ls
+   93  cd k2scripts/
+   94  ls
+   95  cd ..
+   96  ls
+   97  cd k2scripts/
+   98  ls
+   99  cd ..
+  100  ls
+  101  cd x10dt_workspace_3/
+  102  ls
+  103  cd ..
+  104  ls
+  105  cd benchmarks/
+  106  ls
+  107  cd ..
+  108  cd workspace/
+  109  ls
+  110  cd testprgms/
+  111  ls
+  112  cd src/
+  113  ls
+  114  screen -ls
+  115  screen -dr 474
+  116  ls
+  117  cd cd classFiles/
+  118  cd classFiles/
+  119  ls
+  120  vi run_all.sh 
+  121  vi run_on_k2.sh 
+  122  cd ..
+  123  cd unchunked/
+  124  ls
+  125  ls *.x10
+  126  ls
+  127  cd ..
+  128  ls
+  129  cd unchunked/
+  130  ls
+  131  vi byzantine.x10 
+  132  vi byzantineNochange.x10 
+  133  vi byzantineNoChunk.x10 
+  134  vi byzantine.x10 
+  135  vi KAlternate.x10 
+  136  fg
+  137  vi KAlternate.x10 
+  138  cp KAlternate.x10 KAlternate17/3.x10 
+  139  cp KAlternate.x10 KAlternate17-3.x10 
+  140  vi KAlternate.x10 
+  141  rm .KAlternate.x10.swp 
+  142  vi KAlternate.x10 
+  143  ls
+  144  cd ..
+  145  cd GuidSched.h 
+  146  cd cyclic/
+  147  ls
+  148  vi oddEvenCyclic.x10 
+  149  cd ..
+  150  cd dynamic/
+  151  ls
+  152  cd newAlgo/
+  153  ls
+  154  cd ..
+  155  ls
+  156  history | grep "CHUNK"
+  157  history
+  158  history | grep "*.x10"
+  159  history | grep "*.x10*"
+  160  history > log
+  161  vi log 
+  162  cd ..
+  163  ls
+  164  cd ..
+  165  ls
+  166  cd ..
+  167  ls
+  168  cd Research/
+  169  ls
+  170  cd ..
+  171  ls
+  172  cd workspace/
+  173  ls
+  174  cd testprgms/
+  175  ls
+  176  cd src/
+  177  ls
+  178  cd testCases/
+  179  ls
+  180  cd input/
+  181  ls
+  182  cd ..
+  183  vi README.txt 
+  184  cd input/
+  185  ls
+  186  vi 1.x10 
+  187  cd ..
+  188  ls
+  189  cd ..
+  190  cd dynamic/
+  191  ls
+  192  vi bfsBellmanFord.x10 
+  193  vi byzantineFinalWoLOad.x10 
+  194  cd ..
+  195  ls
+  196  cd classFiles/
+  197  ls
+  198  cd trial/
+  199  ls
+  200  cd ..
+  201  cd unchunked/
+  202  'ls
+  203  ls
+  204  ci KAlternate.x10 
+  205  vi KAlternate.x10 
+  206  cd classFiles/
+  207  ls
+  208  cd ..
+  209  cd classFiles/
+  210  ls
+  211  vi chunkOut.x10
+  212  exit
+  213  ls
+  214  showq
+  215  ./script.sh 
+  216  ./script.sh 128 1 64
+  217  ls
+  218  rm *.err *.out
+  219  vim script.sh 
+  220  vim run_all_trans.sh 
+  221  ./script.sh 128 1 64
+  222  fg
+  223  cat results.txt 
+  224  vim script.sh 
+  225  ./script.sh 128
+  226  ./script.sh 128 1 64
+  227  cat results.txt 
+  228  ./script.sh 1024 1 64
+  229  cat results.txt 
+  230  ./script.sh 8192
+  231  ./script.sh 8192 1 64
+  232  ./script.sh 16384 1 64
+  233  ./script.sh 32768 1 64
+  234  qdel all
+  235  vim results.txt 
+  236  ls
+  237  vim script.sh 
+  238  vim run_all_trans.sh 
+  239  ./script.sh 128 1 64
+  240  cat results.txt 
+  241  cat individual-results.txt 
+  242  fg
+  243  vim script.sh 
+  244  rm individual-results.txt 
+  245  cat results.txt 
+  246  vim results.txt 
+  247  ./script.sh 16384 5 64
+  248  cat results.txt 
+  249  ls
+  250  cat openmp_trans.sh 
+  251  cat script.sh 
+  252  ifconfig 
+  253  pwd
+  254  ls
+  255  screen -S raghesh
+  256  exit
+  257  ls
+  258  cd Green-Marl/
+  259  ls
+  260  make clean
+  261  make compiler
+  262  make apps
+  263  type mpic++
+  264  whereis mpic++
+  265  exit
+  266  screen -d -r
+  267  showq
+  268  ls
+  269  cd raghesh
+  270  ls
+  271  ls jk/
+  272  cd ..
+  273  ls
+  274  pwd
+  275  mkdir anchu
+  276  ls
+  277  ifconfig 
+  278  ls
+  279  cd anchu/
+  280  ls
+  281  cd Green-Marl-MPI/
+  282  ls
+  283  screen -ls
+  284  screen -d -r
+  285  fg
+  286  screen -S anchu
+  287  ls
+  288  exit
+  289  ls
+  290  cd Research/
+  291  ls
+  292  cd ../workspace/
+  293  ls
+  294  cd testprgms/
+  295  ls
+  296  cd bin/
+  297  ls
+  298  cd unchunked/
+  299  vi vertexColoringSerialProfile.x10 
+  300  ls
+  301  cd ..
+  302  ls
+  303  cd testCases/
+  304  ls
+  305  vi README.txt 
+  306  cd ..
+  307  ls
+  308  cd cyclic/
+  309  ls
+  310  vi oddEvenCyclic.x10 
+  311  cd ..
+  312  cd ../src/
+  313  ls
+  314  cd dynamic/
+  315  ls
+  316  vi bfsBellmanFord.x10 
+  317  cd ..
+  318  ls
+  319  ssh induk@10.6.27.101
+  320  ls
+  321  cd Softwares/eclipse-kepler/
+  322  ./eclipse/eclipse 
+  323  exit
+  324  cd Softwares/eclipse-kepler/
+  325  ./eclipse/eclipse 
+  326  cd workspace/testprgms/src/unchunked/
+  327  ls
+  328  cd OldFiles/
+  329  ls
+  330  cd ..
+  331  cd classFiles/
+  332  ls
+  333  cd ..
+  334  ls
+  335  cd classFiles/
+  336  ls
+  337  cd ..
+  338  ls
+  339  cd ..
+  340  ls
+  341  cd classFiles/
+  342  ls
+  343  cd trial/
+  344  ls
+  345  cd ..
+  346  cd TestFolder/
+  347  ls
+  348  cd ..
+  349  cd trial/
+  350  ls
+  351  vi chunkOut.x10 
+  352  cd ..
+  353  ls
+  354  vi run_on_k2.sh 
+  355  vi output
+  356  vi bfsByzGuided 
+  357  strings -w "$disk" | grep -C 100 "$cmd"
+  358  strings -w "$disk" 
+  359  strings  "$disk" 
+  360  ls
+  361  vi test.sh 
+  362  vi chunkOut.x10
+  363  cat test.sh 
+  364  x10c++ ../unchunked/oddEven.x10 -CHUNK_BLOCK  -NO_CHECKS >chunkOut.x10
+  365  vi chunkOut.x10
+  366  x10c++ ../unchunked/oddEven.x10 -CHUNK_DYNAMIC  -NO_CHECKS >chunkOut.x10
+  367  vi chunkOut.x10
+  368  x10c++ ../unchunked/oddEven.x10 -CHUNK_CUSTOM  -NO_CHECKS >chunkOut.x10
+  369  x10c++ ../unchunked/KAlternate.x10 -CHUNK_CUSTOM  -NO_CHECKS >chunkOut.x10
+  370  x10c++ ../unchunked/bfsBellmanFord.x10 -CHUNK_CUSTOM  -NO_CHECKS >chunkOut.x10
+  371  vi chunkOut.x10
+  372  vi ../unchunked/KAlternate.x10 
+  373  cd Softwares/eclipse-kepler/eclipse
+  374  ./eclipse 
+  375  cd Softwares/eclipse-kepler/
+  376  ./eclipse/eclipse 
+  377  ls
+  378  cd Softwares/eclipse-kepler/eclipse
+  379  ./eclipse
+  380  cd workspace/testprgms/src/classFiles/
+  381  vi ../unchunked/KAlternate.x10 
+  382  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS >chunkOut.x10
+  383  x10c++ ../unchunked/KAlternate.x10 -CHUNK_DYNAMIC -NO_CHECKS >chunkOut.x10
+  384  vi ../unchunked/KAlternate.x10 
+  385  x10c++ ../unchunked/KAlternate.x10 -CHUNK_DYNAMIC -NO_CHECKS >chunkOut.x10
+  386  fg
+  387  x10c++ ../unchunked/KAlternate.x10 -CHUNK_DYNAMIC -NO_CHECKS >chunkOut.x10
+  388  fg
+  389  x10c++ ../unchunked/KAlternate.x10 -CHUNK_DYNAMIC -NO_CHECKS >chunkOut.x10
+  390  fg
+  391  x10c++ ../unchunked/KAlternate.x10 -CHUNK_DYNAMIC -NO_CHECKS >chunkOut.x10
+  392  fg
+  393  x10c++ ../unchunked/KAlternate.x10 -CHUNK_DYNAMIC -NO_CHECKS >chunkOut.x10
+  394  fg
+  395  x10c++ ../unchunked/KAlternate.x10 -CHUNK_DYNAMIC -NO_CHECKS >chunkOut.x10
+  396  fg
+  397  x10c++ ../unchunked/KAlternate.x10 -CHUNK_CUSTOM -NO_CHECKS >chunkOut.x10
+  398  fg
+  399  x10c++ ../unchunked/KAlternate.x10 -CHUNK_CUSTOM -NO_CHECKS >chunkOut.x10
+  400  x10c++ ../unchunked/bfsBellmanFord.x10 -CHUNK_CUSTOM -NO_CHECKS >chunkOut.x10
+  401  vi chunkOut.x10
+  402  fg
+  403  x10c++ ../unchunked/KAlternate.x10 -CHUNK_CUSTOM -NO_CHECKS >chunkOut.x10
+  404  fg
+  405  x10c++ ../unchunked/KAlternate.x10 -CHUNK_CUSTOM -NO_CHECKS >chunkOut.x10
+  406  fg
+  407  x10c++ ../unchunked/KAlternate.x10 -CHUNK_DYNAMIC -NO_CHECKS >chunkOut.x10
+  408  fg
+  409  x10c++ ../unchunked/KAlternate.x10 -CHUNK_DYNAMIC -NO_CHECKS >chunkOut.x10
+  410  fg
+  411  cd Softwares/eclipse-kepler/eclipse
+  412  ./eclipse 
+  413  cd Softwares/eclipse-kepler/
+  414  ./eclipse/eclipse 
+  415  cd Softwares/eclipse-kepler/
+  416  ./eclipse/eclipse 
+  417  cd Softwares/eclipse-kepler/
+  418  ./eclipse/eclipse eclipse
+  419  cd workspace/testprgms/
+  420  ls
+  421  cd src/
+  422  ls
+  423  cd unchunked/
+  424  vi KAlternate.x10 
+  425  x10c++ ../unchunked/KAlternate.x10 -CHUNK_DYNAMIC -NO_CHECKS >chunkOut.x10
+  426  vi KAlternate.x10 
+  427  x10c++ ../unchunked/KAlternate.x10 -CHUNK_CUSTOM -NO_CHECKS >chunkOut.x10
+  428  x10c++ ../unchunked/bfsBellmanFord.x10 -CHUNK_CUSTOM -NO_CHECKS >chunkOut.x10
+  429  vi chunkOut.x10
+  430  x10c++ ../unchunked/bfsBellmanFord.x10 -CHUNK_DYNAMIC -NO_CHECKS >chunkOut.x10
+  431  vi KAlternate.x10 
+  432  vi chunkOut.x10
+  433  fg
+  434  cd ~/workspace/x10-2.4.3-src/x10.dist/
+  435  ant -DNO_CHECKS=true -Doptimize=true dist
+  436  cd -
+  437  x10c++ ../unchunked/bfsBellmanFord.x10 -CHUNK_HISTORY -NO_CHECKS >chunkOut.x10
+  438  x10c++ ../unchunked/bfsBellmanFord.x10 -CHUNK_HISTORY -NO_CHECKS 2>err
+  439  vi err 
+  440  fg
+  441  cd -
+  442  ant -DNO_CHECKS=true -Doptimize=true dist
+  443  x10c++ ../unchunked/bfsBellmanFord.x10 -CHUNK_HISTORY -NO_CHECKS 
+  444  cd -
+  445  x10c++ ../unchunked/bfsBellmanFord.x10 -CHUNK_HISTORY -NO_CHECKS 
+  446  x10c++ ../unchunked/bfsBellmanFord.x10 -CHUNK_HISTORY -NO_CHECKS 2>err
+  447  vi err 
+  448  cd -
+  449  ant -DNO_CHECKS=true -Doptimize=true dist
+  450  cd -
+  451  x10c++ ../unchunked/bfsBellmanFord.x10 -CHUNK_HISTORY -NO_CHECKS 2>err
+  452  vi err 
+  453  cd -
+  454  ant -DNO_CHECKS=true -Doptimize=true dist
+  455  cd -
+  456  x10c++ ../unchunked/bfsBellmanFord.x10 -CHUNK_HISTORY -NO_CHECKS 2>err
+  457  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS 2>err
+  458  vi err 
+  459  fg
+  460  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  461  fg
+  462  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  463  fg
+  464  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  465  fg
+  466  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  467  fg
+  468  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  469  fg
+  470  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  471  cd -
+  472  ant -DNO_CHECKS=true -Doptimize=true dist
+  473  cd -
+  474  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  475  cd -
+  476  ant -DNO_CHECKS=true -Doptimize=true dist
+  477  cd -
+  478  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  479  vi chunkOut.x10
+  480  cd -
+  481  ant -DNO_CHECKS=true -Doptimize=true dist
+  482  cd -
+  483  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  484  fg
+  485  cd ..
+  486  cd classFiles/
+  487  ls
+  488  vi ../unchunked/KAlternate.x10 
+  489  cd -
+  490  cd ~/workspace/x10-2.4.3-src/x10.dist/
+  491  ant -DNO_CHECKS=true -Doptimize=true dist
+  492  cd ~/workspace/testprgms/src/classFiles/
+  493  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  494  vi chunkOut.x10
+  495  vi sHist.txt
+  496  fg
+  497  vi sHist.txt 
+  498  vi run_on_k2.sh
+  499  #executable="./a.out -n 100 -k1 1 -k2 1 -sc 10 "
+  500  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  501  vi ../unchunked/KAlternate.x10 
+  502  ./a.out -n 100 -k1 1 -k2 1 -sc 10[B[A[Accc
+  503  fg
+  504  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  505  fg
+  506  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  507  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  508  fg
+  509  vi profileResultsHist.txt 
+  510  fg
+  511  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  512  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  513  fg
+  514  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  515  fg
+  516  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  517  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  518  fg
+  519  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  520  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  521  fg
+  522  vi chunkOut.x10
+  523  cd -
+  524  ant -DNO_CHECKS=true -Doptimize=true dist
+  525  cd -
+  526  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  527  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  528  fg
+  529  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  530  fg
+  531  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  532  fg
+  533  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  534  fg
+  535  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  536  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  537  fg
+  538  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  539  fg
+  540  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  541  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  542  fg
+  543  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  544  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  545  fg
+  546  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  547  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  548  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  549  fg
+  550  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  551  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  552  fg
+  553  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  554  fg
+  555  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  556  fg
+  557  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  558  fg
+  559  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  560  fg
+  561  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  562  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  563  fg
+  564  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  565  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  566  fg
+  567  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  568  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  569  fg
+  570  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  571  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  572  fg
+  573  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  574  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  575  fg
+  576  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  577  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  578  fg
+  579  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  580  fg
+  581  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  582  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  583  fg
+  584  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  585  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  586  fg
+  587  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  588  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  589  echo $X10_NTHREADS
+  590  export X10_NTHREADS=4
+  591  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  592  ff
+  593  fg
+  594  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  595  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  596  fg
+  597  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  598  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  599  fg
+  600  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  601  fg
+  602  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  603  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  604  fg
+  605  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  606  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  607  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  608  fg
+  609  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  610  fg
+  611  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  612  fg
+  613  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  614  fg
+  615  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  616  cd -
+  617  ant -DNO_CHECKS=true -Doptimize=true dist
+  618  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  619  ant -DNO_CHECKS=true -Doptimize=true dist
+  620  cd -
+  621  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  622  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  623  fg
+  624  vi chunkOut.x10
+  625  fg
+  626  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  627  fg
+  628  vi chunkOut.x10
+  629  fg
+  630  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  631  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  632  fg
+  633  vi ../unchunked/KAlternate.x10 
+  634  fg
+  635  export X10_NTHREADS=1
+  636  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  637  fg
+  638  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  639  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  640  fg
+  641  vi chunkOut.x10
+  642  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS > chunkOut.x10
+  643  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS 
+  644  cd -
+  645  ant -DNO_CHECKS=true -Doptimize=true dist
+  646  d -
+  647  cd -
+  648  ant -DNO_CHECKS=true -Doptimize=true dist
+  649  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS 
+  650  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  651  export X10_NTHREADS=4
+  652  fg
+  653  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS  > chunkOut.x10
+  654  fg
+  655  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS  > chunkOut.x10
+  656  ./a.out -n 100 -k1 1 -k2 1 -sc 10
+  657  fg
+  658  ./a.out -n 100 -k1 1 -k2 1 -sc 1
+  659  fg
+  660  ./a.out -n 100 -k1 1 -k2 1 -sc 1
+  661  ./a.out -n 100 -k1 1 -k2 1 -sc 1 > log
+  662  vi log 
+  663  fg
+  664  vi log 
+  665  fg
+  666  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS  > chunkOut.x10
+  667  fg
+  668  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS  > chunkOut.x10
+  669  ./a.out -n 100 -k1 1 -k2 1 -sc 1 > log
+  670  vi log 
+  671  fg
+  672  vi profileResultsHist.txt 
+  673  ./a.out -n 10 -k1 1 -k2 1 -sc 1 > log
+  674  vi log 
+  675  fg
+  676  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS  > chunkOut.x10
+  677  ./a.out -n 10 -k1 1 -k2 1 -sc 1 > log
+  678  vi log 
+  679  fg
+  680  vi profileResultsHist.txt 
+  681  fg
+  682  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY -NO_CHECKS  > chunkOut.x10
+  683  ./a.out -n 10 -k1 1 -k2 1 -sc 1 > log
+  684  vi log 
+  685  ./a.out -n 2w0 -k1 1 -k2 1 -sc 1 > log
+  686  ./a.out -n 20 -k1 1 -k2 1 -sc 1 > log
+  687  fg
+  688  vi log 
+  689  x10c++ ../unchunked/KAlternate.x10 -CHUNK_PROFILE -NO_CHECKS  > chunkOut.x10
+  690  vi chunkOut.x10
+  691  cd -
+  692  ant -DNO_CHECKS=true -Doptimize=true dist
+  693  cd -
+  694  x10c++ ../unchunked/KAlternate.x10 -CHUNK_PROFILE -NO_CHECKS  > chunkOut.x10
+  695  vi chunkOut.x10
+  696  fg
+  697  vi ../unchunked/KAlternate.x10 
+  698  vi profileResults.txt 
+  699  x10c++ ../unchunked/KAlternate.x10 -CHUNK_PROFILE -NO_CHECKS  > chunkOut.x10
+  700  ./a.out -n 20 -k1 1 -k2 1 -sc 1
+  701  vi profileResults.txt 
+  702  vi chunkOut.x10
+  703  fg
+  704  vi chunkOut.x10
+  705  fg
+  706  cd -
+  707  ant -DNO_CHECKS=true -Doptimize=true dist
+  708  cd -
+  709  fg
+  710  cd -\
+  711  cd -
+  712  ant -DNO_CHECKS=true -Doptimize=true dist
+  713  cd -
+  714  x10c++ ../unchunked/KAlternate.x10 -CHUNK_PROFILE -NO_CHECKS  > chunkOut.x10
+  715  cd -
+  716  x10c++ ../unchunked/KAlternate.x10 -CHUNK_PROFILE -NO_CHECKS  > chunkOut.x10
+  717  fg
+  718  x10c++ ../unchunked/KAlternate.x10 -CHUNK_PROFILE -NO_CHECKS  > chunkOut.x10
+  719  fg
+  720  cd -
+  721  ant -DNO_CHECKS=true -Doptimize=true dist
+  722  cd -
+  723  x10c++ ../unchunked/KAlternate.x10 -CHUNK_PROFILE -NO_CHECKS  > chunkOut.x10
+  724  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY_PROFILE -NO_CHECKS  > chunkOut.x10
+  725  fg
+  726  vi chunkOut.x10
+  727  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY_PROFILE -NO_CHECKS  > chunkOut.x10
+  728  cd -
+  729  ant -DNO_CHECKS=true -Doptimize=true dist
+  730  cd -
+  731  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY_PROFILE -NO_CHECKS  > chunkOut.x10
+  732  vi chunkOut.x10
+  733  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY_PROFILE -NO_CHECKS  > chunkOut.x10
+  734  ./a.out -n 20 -k1 1 -k2 1 -sc 1
+  735  vi profileResultsHist.txt 
+  736  fg
+  737  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY_PROFILE -NO_CHECKS  > chunkOut.x10
+  738  ./a.out -n 20 -k1 1 -k2 1 -sc 1
+  739  fg
+  740  vi chunkOut.x10
+  741  fg
+  742  vi chunkOut.x10
+  743  cd ../unchunked/
+  744  grep -e "*break*" -e "*continue*" *.x10
+  745  grep -e "*break*" -e "*main*" *.x10
+  746  grep -e "*break*" -e "*main*" .
+  747  grep  "*main*" .
+  748  grep
+  749  ls
+  750  grep main KAlternate.x10 
+  751  grep "main" KAlternate.x10 
+  752  grep "*main*" KAlternate.x10 
+  753  grep ".*main.*" KAlternate.x10 
+  754  grep ".*break.*" KAlternate.x10 
+  755  grep -e ".*break.*"  -e ".*continue.*" *.x10 > delete
+  756  vi delete 
+  757  grep -e -B1 ".*break.*"  -e ".*continue.*" *.x10 > delete
+  758  grep -B1 -e  ".*break.*"  -e ".*continue.*" *.x10 > delete
+  759  vi delete 
+  760  vi bfsDijkstra.x10 
+  761  vi bfsBellmanFord.x10 
+  762  vi dominatingSet.x10 
+  763  ls
+  764  vi KAlternate.x10 
+  765  vi Linpack.x10 
+  766  vi kcommitte.x10 
+  767  vi leader_elect_dp.x10 
+  768  vi md.x10 
+  769  vi mis.x10 
+  770  vi oddEven.x10 
+  771  vi vertexColoring.x10 
+  772  cd -
+  773  fg
+  774  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY_PROFILE -NO_CHECKS  > chunkOut.x10
+  775  fg
+  776  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY_PROFILE -NO_CHECKS  > chunkOut.x10
+  777  ./a.out -n 20 -k1 1 -k2 1 -sc 1
+  778  vi profileResultsHist.txt 
+  779  ./a.out -n 20 -k1 1 -k2 1 -sc 1 > log
+  780  vi log 
+  781  fg
+  782  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY_PROFILE -NO_CHECKS  > chunkOut.x10
+  783  rm profileResultsHist.txt 
+  784  ./a.out -n 20 -k1 1 -k2 1 -sc 1 > log
+  785  vi log 
+  786  vi profileResultsHist.txt 
+  787  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY_PROFILE -NO_CHECKS  > chunkOut.x10
+  788  vi profileResults.txt 
+  789  ./a.out -n 20 -k1 1 -k2 1 -sc 1 > log
+  790  vi log 
+  791  fg
+  792  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY_PROFILE -NO_CHECKS  > chunkOut.x10
+  793  ./a.out -n 20 -k1 1 -k2 1 -sc 1 > log
+  794  vi log 
+  795  vi profileResultsHist.txt
+  796  ./a.out -n 20 -k1 1 -k2 1 -sc 1 > log
+  797  vi profileResultsHist.txt 
+  798  fg
+  799  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY_PROFILE -NO_CHECKS  > chunkOut.x10
+  800  vi profileResultsHist.txt 
+  801  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY_PROFILE -NO_CHECKS  > chunkOut.x10
+  802  ./a.out -n 20 -k1 1 -k2 1 -sc 1 > log
+  803  vi profileResultsHist.txt 
+  804  ls
+  805  ls *.jaa
+  806  ls *.java
+  807  vi ResultProcess.java 
+  808  vi FileProcessor.java 
+  809  vi avgExecTime.txt 
+  810  *..sh
+  811  *.sh
+  812  ls *.sh
+  813  vi computeProfiledCost.sh 
+  814  cp FileProcessor.java FileProcessorHist.java
+  815  vi FileProcessorHist.java 
+  816  fg
+  817  x10c++ ../unchunked/KAlternate.x10 -CHUNK_HISTORY_PROFILE -NO_CHECKS  > chunkOut.x10
+  818  ./a.out -n 20 -k1 1 -k2 1 -sc 1 > log
+  819  vi profileResults.txt 
+  820  fg
+  821  fg %1
+  822  fg
+  823  jobs
+  824  fg %2
+  825  javac FileProcessorHist.java 
+  826  fg
+  827  javac FileProcessorHist.java 
+  828  fg
+  829  javac FileProcessorHist.java 
+  830  fg
+  831  javac FileProcessorHist.java 
+  832  fg
+  833  screen -ls
+  834  exit
+  835  history
+  836  history | grep "scaling*"
+  837  cat /sys/devices/system/cpu/cpu0//cpufreq/scaling_governor 
+  838  exit
+  839  cat /sys/devices/system/cpu/cpu0//cpufreq/scaling_governor 
+  840  jobs
+  841  qjobs
+  842  qstat
+  843  exit
+  844  qstat -a
+  845  exit
+  846  qstat -a
+  847  exit
+  848  cat /sys/devices/system/cpu/cpu0//cpufreq/scaling_governor 
+  849  cat /sys/devices/system/cpu/cpu0//cpufreq/scaling_cur_freq 
+  850  exit
+  851  cd ~/workspace/testprgms/src/classFiles/
+  852  vi run_on_k2.sh 
+  853  showq
+  854  showq -u induk
+  855  ls
+  856  screen -ls
+  857  screen -S indu
+  858  ls
+  859  showq
+  860  showq -u induk
+  861  cd ~/workspace/testprgms/src/classFiles/
+  862  ls
+  863  vi profileResultsHist.txt 
+  864  showq -n
+  865  showq 
+  866  ls
+  867  cd Softwares/eclipse-kepler/eclipse
+  868  ./eclipse/eclipse
+  869  ./eclipse 
+  870  cd Softwares/eclipse-kepler/
+  871  ./eclipse/eclipse 
+  872  cd Softwares/eclipse-kepler/
+  873  ./eclipse/eclipse 
+  874  vi eclipse/configuration/1528786745810.log 
+  875  cd Softwares/eclipse-kepler/
+  876  ./eclipse/eclipse 
+  877  PuTTY X11 proxy: unable to connect to forwarded X server: Network error: Connection refused
+  878  cd Softwares/eclipse-kepler/
+  879  ./eclipse/eclipse 
+  880  cd Softwares/eclipse-kepler/
+  881  ./eclipse/eclipse 
+  882  xclock &
+  883  cd Softwares/eclipse-kepler/
+  884  ./eclipse/eclipse 
+  885  cd Softwares/eclipse-kepler/
+  886  ./eclipse/eclipse 
+  887  xclock &
+  888  screen -ls
+  889  screen -dr indu
+  890  cd Softwares/eclipse-kepler/
+  891  ./eclipse/eclipse 
+  892  xclock &
+  893  exit
+  894  cd Softwares/eclipse-kepler/
+  895  ./eclipse/eclipse 
+  896  which X11
+  897  vi Runtime.x10 
+  898  qall!
+  899  vi Runtime.x10 
+  900  vimdiff Runtime.x10 ~/workspace/x10-2.4.3-src/x10.runtime/src-x10/x10/lang/Runtime.x10 
+  901  which teamviewer
+  902  which vnc
+  903  which putty
+  904  cd Softwares/eclipse-kepler/
+  905  ./eclipse/eclipse 
+  906  screen -dr indu
+  907  sclock &
+  908  xclock &
+  909  cd Softwares/eclipse-kepler/
+  910  ./eclipse/eclipse 
+  911  cd workspace/
+  912  ls
+  913  cd ..
+  914  cd Softwares/eclipse-kepler/
+  915  ls
+  916  cd eclipse
+  917  ls
+  918  cd ..
+  919  cd workspace/
+  920  ls
+  921  cd x10-2.4.3-src/
+  922  ls
+  923  cd ..
+  924  cd .metadata/
+  925  ls
+  926  rm .lo
+  927  rm .lock 
+  928  cd ..
+  929  ls
+  930  cd induk/
+  931  ls
+  932  cd workspace/x10-2.4.3-src/
+  933  ls
+  934  cd x10.runtime/
+  935  ls
+  936  find -name "Runtime.x10"
+  937  cd src-x10/x10/lang/
+  938  ls
+  939  vimdiff ~/Runtime.x10 Runtime.x10 
+  940  cd ~/workspace/testprgms/src/classFiles/
+  941  ls
+  942  screen -dr indu
+  943  ls
+  944  cd workspace/testprgms/
+  945  ls
+  946  cd src/
+  947  ls
+  948  cd classFiles/
+  949  screen -ls
+  950  screen -dr indu
+  951  ls
+  952  cd workspace/testprgms/src/classFiles/
+  953  screen -dr indu
+  954  xclock &
+  955  cd Softwares/eclipse-kepler/
+  956  ./eclipse/eclipse 
+  957  cd ..
+  958  cd .
+  959  cd ..
+  960  cd workspace/
+  961  ls
+  962  cd x10-2.4.3-src/
+  963  ls
+  964  cd ..
+  965  cd .metadata/
+  966  rm .lock 
+  967  cd ..
+  968  cd Softwares/eclipse-kepler/
+  969  ./eclipse/eclipse 
+  970  xclock &
+  971  ls
+  972  qsub
+  973  exit
+  974  qstat
+  975  showq
+  976  exit
+  977  cd Softwares/eclipse-kepler/
+  978  ./eclipse/eclipse 
+  979  xclock &
+  980  ./eclipse/eclipse 
+  981  cd Softwares/eclipse-kepler/
+  982  ./eclipse/eclipse 
+  983  lshw
+  984  lscpu
+  985  exit
+  986  ssh k2n01
+  987  exit
+  988  lscpu
+  989  history | grep "scaling*"
+  990  cat /sys/devices/system/cpu/cpu0//cpufreq/scaling_cur_freq 
+  991  lscpu
+  992  exit
+  993  cd workspace/testprgms/src/unchunked/
+  994  vi vertexColoring.x10 
+  995  ssh k2n01
+  996  ls
+  997  cd  Backup/
+  998  ls
+  999  ls -ls
+ 1000  cd ..
+ 1001  cd workspace/
+ 1002  ls
+ 1003  cd x10-2.4.3-src/x10.compiler/src/polyglot/visit/
+ 1004  ls
+ 1005  ls -l
+ 1006  vi PreCustomChunk.java 
+ 1007  ls -lt
+ 1008  vi CustomChunk
+ 1009  vi CustomChunk.java 
+ 1010  grep "System.out.print"
+ 1011  grep "System.out.print" CustomChunk.java 
+ 1012  vi HistoryLoopProfileInstrumentation.java 
+ 1013  vi PostChunking.java 
+ 1014  vi HistoryStatementProfiler.java 
+ 1015  vi AstHelper.java 
+ 1016  vi ChunkAtomicProfileInstrumentation.java 
+ 1017  vi ChunkOptimizer.java 
+ 1018  vi customChunkClosureCapture.java 
+ 1019  vi ChunkProfileInstrumentation.java 
+ 1020  vi PreCustomChunk.java 
+ 1021  history
+ 1022  vi history
+ 1023  history > hist

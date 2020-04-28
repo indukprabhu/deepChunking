@@ -1,0 +1,149 @@
+#!/usr/bin/env bash
+# DO NOT EDIT - This file was automatically generated.
+UNAME=`uname -smp | sed -e 's/ /,/g'`
+FILE_SEP='/'; if [[ "$UNAME" = CYGWIN* ]]; then FILE_SEP='\\'; fi
+PATH_SEP=':'; if [[ "$UNAME" = CYGWIN* ]]; then PATH_SEP=';'; fi
+
+prog="$(readlink "$0" 2>&1)"
+[ $? -eq 127 -o "$prog" = "" ] && prog="$0"
+TOP="$(cd "$(dirname "$prog")/.." && pwd)"
+if [[ "$UNAME" = CYGWIN* ]]; then PATH="$PATH:$TOP/lib"; TOP="$(cygpath -am "$TOP")"; fi
+
+[ -n "$JAVA_HOME" ] || JAVA_HOME='/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9.x86_64'
+[ -n "$JRE_HOME" ] || JRE_HOME='/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.9.x86_64/jre'
+if [[ "$UNAME" = CYGWIN* ]]; then JAVA_HOME="$(cygpath -am "$JAVA_HOME")"; JRE_HOME="$(cygpath -am "$JRE_HOME")"; fi
+if [ -n "$JAVA_HOME" -a -e "$JAVA_HOME/bin/java" ]; then
+    JAVA="$JAVA_HOME/bin/java"
+    JAR="$JAVA_HOME/bin/jar"
+elif [ -n "$JRE_HOME" -a -e "$JRE_HOME/bin/java" ]; then
+    JAVA="$JRE_HOME/bin/java"
+    JAR="$JRE_HOME/bin/jar"
+else
+    echo "JAVA_HOME ($JAVA_HOME) is not pointing to a JRE or a JDK"
+    exit 1
+fi
+if [[ "$UNAME" = CYGWIN* ]]; then JAVA="$(cygpath -au "$JAVA")"; JAR="$(cygpath -au "$JAR")"; fi
+
+# NOTE: the above assumes that Cygwin==win32 (probably valid)
+
+#CONFIG_FILE='standard.cfg'
+LPG_JAR='lpg.jar'
+ECJ_JAR='ecj-4.3.2.jar'
+WALA_JAR='com.ibm.wala.cast.java_1.0.0.201101071300.jar'
+WALA2_JAR='com.ibm.wala.cast_1.0.0.201101071300.jar'
+WALA3_JAR='com.ibm.wala.core_1.1.3.201101071300.jar'
+SHRIKE_JAR='com.ibm.wala.shrike_1.3.1.201101071300.jar'
+MATH_JAR='commons-math3-3.2.jar'
+LOG_JAR='commons-logging-1.1.3.jar'
+LOGGING_PROPERTIES='logging.properties'
+CROSS_COMPILE_BGQ='false'
+CROSS_COMPILE_FX10='false'
+X10RT_PAMI_IS_DEFAULT='false'
+
+help=""
+time=""
+verbose=""
+extra_cp=""
+extra_lib=""
+mx=""
+defs=""
+dev=""
+java_args=""
+args=""
+
+while [ -n "$1" ]; do
+    case "$1" in
+        -h|-help|--help) help="1"; break;;
+        -v|-verbose|--verbose) verbose="1";;
+        -t|-time) time="time ";;
+        -mx) shift; mx="$1";;
+        -D*) if [[ "${1##-D}" = java.library.path=* ]]; then
+                 echo >&2 "Error: Cannot reset java.library.path, use -libpath instead"
+                 exit 1
+             fi
+             # TODO: add tests for more system properties above
+             defs="${defs} $1";;
+        -classpath|-cp) shift; extra_cp="$1";;
+        -libpath) shift; extra_lib="$1";;
+        -config) shift; config="$1.cfg";;
+        -dev) dev="true";;
+        -J*) java_args="${java_args} '${1##-J}'";;
+        -*=*) java_args="${java_args} -Dx10.${1##-}";;
+        -*) java_args="${java_args} -Dx10.${1##-}=true";;
+        *.x10) args="$args '${1%%.x10}\$Main'"; shift; args="$args $*"; break;;
+        *) args="$args $*"; break;;
+    esac
+    shift
+done
+
+if [ -n "$help" -o -z "$args" ]; then
+    cat << EOF
+Usage: x10 [options] <main-class> [arg0 arg1 ...]
+where [options] includes:
+    -t -time                 display execution time
+    -v -verbose --verbose    print verbose debugging information
+    -h -help --help          print this message
+    -mx <size>               set max heap size, e.g., -mx 200M
+    -D<name>=<value>         set system property <name> to <value>
+    -classpath <path>        search path for class files
+    -libpath <path>          search path for native libraries
+    -config <conf>           (IGNORED) read configuration from etc${FILE_SEP}<conf>.cfg
+    -dev                     developer mode (use unpackaged X10 libraries)
+    -J<arg>                  [USE WITH CAUTION] pass <arg> directly to java.
+        e.g., use -J-verbose to make java execution verbose.
+    -INIT_THREADS=<number>   set number of threads to allocate in the thread pool (default: # of cores)
+    -STATIC_THREADS          disable creating additional threads while blocking
+    -NO_STEALS               disable steals
+EOF
+    exit 1
+fi
+
+
+CONFIG_DIR="${TOP}${FILE_SEP}etc"
+LIB_DIR=
+
+[ -n "$config" ] && config="-Dx10.configuration=\"${CONFIG_DIR}${FILE_SEP}${config}\""
+
+classpath=""
+[ -n "$dev" ] && classpath="${TOP}${FILE_SEP}..${FILE_SEP}x10.runtime${FILE_SEP}classes${PATH_SEP}"
+classpath=".${PATH_SEP}${classpath}${TOP}${FILE_SEP}stdlib${FILE_SEP}x10.jar"
+classpath="${classpath}${PATH_SEP}${TOP}${FILE_SEP}lib${FILE_SEP}${MATH_JAR}"
+classpath="${classpath}${PATH_SEP}${TOP}${FILE_SEP}..${FILE_SEP}apgas.java${FILE_SEP}bin${FILE_SEP}"
+
+if [ -n "$extra_cp" ]; then
+   classpath="$extra_cp${PATH_SEP}$classpath"
+fi
+
+externpath="${classpath}${PATH_SEP}${TOP}${FILE_SEP}lib"
+if [ -n "$extra_lib" ]; then
+   externpath="$extra_lib${PATH_SEP}$externpath"
+fi
+
+java_args="-Djava.library.path=\"$externpath\" -ea -classpath \"$classpath\" ${java_args}"
+
+if [ -n "$mx" ]; then
+   java_args="-Xmx$mx $java_args"
+fi
+
+if [ -n "$X10_NTHREADS" ]; then
+   java_args="-Dx10.INIT_THREADS=$X10_NTHREADS $java_args"
+fi
+
+if [ -n "$X10_STATIC_THREADS" ]; then
+   java_args="-Dx10.STATIC_THREADS=true $java_args"
+fi
+
+java_args="${java_args} ${defs}"
+
+command="\"$JAVA\" $java_args $config $args"
+
+[ -n "$verbose" ] && echo "$command"
+
+if [ -z "$X10_SINGLE_JVM" ]; then 
+    launcher="${TOP}${FILE_SEP}bin${FILE_SEP}X10Launcher"
+    eval "$time$launcher $command"
+else 
+    eval "$time$command"
+fi
+exit $?
+
