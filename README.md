@@ -1,4 +1,6 @@
 # deepChunking
+# Lead developer: Indu K Prabhu
+# Advisor: V. Krishna Nandivada
 build the x10 src compiler. 
 Flags for different compilation modes
 To compile block-chunk:       -CHUNK_BLOCK 
