@@ -1,4 +1,4 @@
-# deepChunking: Chunking Loops with non-Uniform Workloads
+# Deep-chunking: Chunking Loops with non-Uniform Workloads
 # Lead developer: Indu K Prabhu
 # Advisor: V. Krishna Nandivada
 build the x10 src compiler. 
